@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exercise 5</string>
+    <string name="action_settings">Settings</string>
+    <string name="delete_all">Delete All</string>
+    <string name="quit">Quit</string>
+    <string name="placeholder">placeHolder</string>
+    <string name="min">min</string>
+    <string name="on_time">On time</string>
+    <string name="late">Late</string>
+    <string name="mins">mins</string>
+</resources>

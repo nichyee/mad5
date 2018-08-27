@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/arrival_box_ll"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5sp"
+        android:background="@color/dark_green"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/arrival_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="X min"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/platform_info_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_toLeftOf="@+id/destination_ll"
+        android:layout_toRightOf="@id/arrival_box_ll"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/platform_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location - Platform" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/on_time"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/destination_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/destination_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival Time"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/destination_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
